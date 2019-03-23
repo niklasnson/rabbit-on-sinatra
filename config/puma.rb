@@ -1,2 +1,2 @@
 preload_app!
-port        3000
+port  ENV['PORT'] || 3000
