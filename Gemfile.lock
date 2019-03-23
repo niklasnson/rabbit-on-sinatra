@@ -6,7 +6,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.4)
+    concurrent-ruby (1.1.5)
     execjs (2.7.0)
     ffi (1.10.0)
     multi_json (1.13.1)
@@ -15,6 +15,7 @@ GEM
     rack (2.0.6)
     rack-protection (2.0.5)
       rack
+    rake (12.3.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -50,11 +51,15 @@ PLATFORMS
 DEPENDENCIES
   coffee-script
   puma
+  rake
   sass
   sinatra
   sinatra-reloader
   sprockets
   uglifier
+
+RUBY VERSION
+   ruby 2.6.0p0
 
 BUNDLED WITH
    1.17.2
