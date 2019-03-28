@@ -1,9 +1,24 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <title>Kropssfabriken - Fetisch klubb</title>
     <link rel="stylesheet" href="assets/application.css">
     <script src="assets/application.js"></script>
   </head>
   <body>
-    <%= yield %>
+    <div class="header">
+      <a href="/" class="header-brand"><img src="assets/header_kroppsfabriken.png"></a>
+      <div class="header-right">
+        <a href="/">Hem</a>
+        <a href="/information">Information</a>
+        <a href="/fester">Fester</a>
+        <a href="/dresscode">Klädkod</a>
+        <a href="/kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="main-container">
+      <%= yield %>
+    </div>
   </body>
 </html>

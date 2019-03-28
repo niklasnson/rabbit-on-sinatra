@@ -1,12 +1,12 @@
 require 'sinatra'
-require 'sinatra/reloader'
 require 'sprockets'
 require 'uglifier'
 require 'sass'
 require 'coffee-script'
 require 'execjs'
 
-class SinatraBootstrap < Sinatra::Base
+class Kroppsfabriken < Sinatra::Base
+
   set :environment, Sprockets::Environment.new
 
   environment.append_path 'assets/javascripts'
@@ -25,4 +25,19 @@ class SinatraBootstrap < Sinatra::Base
     erb :index
   end
 
+  get '/dresscode' do 
+    erb :dresscode
+  end
+
+  get '/information' do 
+    erb :info
+  end
+
+  get '/kontakt' do 
+    erb :contact
+  end
+
+  get '/fester' do  
+    erb :fester 
+  end
 end
